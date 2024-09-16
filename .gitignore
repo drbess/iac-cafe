@@ -1,0 +1,4 @@
+wrksp_token.py
+*pyc
+*.log
+terraform_cloud_wrksp/tfc_wksp_debug.py
