@@ -8,14 +8,14 @@ terraform {
 }
 
 provider "linode" {
-  token = var.token
+  token = var.api_token
 }
 
-resource "linode_instance" "web" {
-  label           = "simple_instance"
-  image           = "linode/ubuntu22.04"
+resource "linode_instance" "rycm-dev" {
+  label           = "rycm-dev-instance"
+  image           = "linode/fedora41"
   region          = "us-east"
-  type            = "g6-standard-1"
+  type            = "g6-standard-1" # Look up type
   authorized_keys = var.authorized_keys
   root_pass       = var.root_password
 

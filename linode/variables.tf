@@ -1,5 +1,4 @@
-
-variable "token" {
+variable "api_token" {
   type        = string
   description = "API token for authentication"
   sensitive   = true
@@ -7,6 +6,7 @@ variable "token" {
 
 # Make sure this block contains type = list(string)""
 variable "authorized_keys" {
+
   type        = list(string)
   description = "List of SSH public keys for authorized access"
   sensitive   = true

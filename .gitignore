@@ -5,4 +5,7 @@ terraform_cloud_wrksp/tfc_wksp_debug.py
 *.tfvars
 *.tfstate
 *.tfstate.backup
+*.txt  
 
+
+.terraform/
